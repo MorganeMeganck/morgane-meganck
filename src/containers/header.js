@@ -117,7 +117,8 @@ const Header = ({ show }) => {
               </Navbar.Collapse>
           </div>
       </Navbar>
-      <HeaderDiv className="container">
+      <HeaderDiv className="container" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="2000">
       <ImageLeft ></ImageLeft>
       <TextWrap>
         <Intro className="intro" >

@@ -138,7 +138,8 @@ const SocialLink = styled.a`
 
 const Contact = () => {
   return (
-    <Section id="contact" data-aos="fade-down" data-aos-duration="350" data-aos-delay="250">
+    <Section id="contact" data-aos="fade-down" data-aos-easing="linear"
+    data-aos-duration="1500">
         <ImageContact></ImageContact>
         <TopBorderleft></TopBorderleft>
         <TopBorderright></TopBorderright>
@@ -163,7 +164,7 @@ const Contact = () => {
             </SocialLink>
           </li>
         </List>
-        <Text data-aos="fade-up" data-aos-duration="350" data-aos-delay="250">
+        <Text >
             Brussels morgane.meganck@gmail.com
         </Text>
         <BottomImgLeft></BottomImgLeft>
