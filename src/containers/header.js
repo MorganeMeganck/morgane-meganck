@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import logo from '../images/logomm.png';
 import styled from 'styled-components';
+import img from '../images/prout2.svg';
 import { Link } from 'gatsby'
 import { Navbar } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
@@ -61,6 +63,7 @@ const Text = styled.p`
   }
 `;
 const ImageLeft = styled.div`
+  background-image: url(${img});
   width: 150px;
   height: 150px;
   transform: rotate(-90deg);
@@ -69,6 +72,7 @@ const ImageLeft = styled.div`
   left:0;
 `;
 const ImageRight = styled.div`
+background-image: url(${img});
   width: 150px;
   height: 150px;
   transform: rotate(90deg);
@@ -101,7 +105,7 @@ const Header = ({ show }) => {
           <div id="header-container" className="container navbar-container">
               <div className="navbar-header">
                   <Navbar.Brand className="navbar-brand" href="#">
-                      <img className="logoResponsive" src="/img/logomm.png" width="50" height="50" top="2" alt=""/>
+                      <img className="logoResponsive" src={logo} width="50" height="50" top="2" alt=""/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
               </div>
@@ -114,7 +118,7 @@ const Header = ({ show }) => {
           </div>
       </Navbar>
       <HeaderDiv className="container">
-      <ImageLeft  style={{ backgroundImage: "url(/img/prout2.svg)" }}></ImageLeft>
+      <ImageLeft ></ImageLeft>
       <TextWrap>
         <Intro className="intro" >
           <Heading id="more">
@@ -125,8 +129,8 @@ const Header = ({ show }) => {
           </Text>
         </Intro>
       </TextWrap>
-      <ImageRight  style={{ backgroundImage: "url(/img/prout2.svg)" }}></ImageRight>
-      <Link to="/more" className="arrowContainer">
+      <ImageRight ></ImageRight>
+      <Link to="/#more" className="arrowContainer">
             <div className="arrow"></div>
             <div className="arrow"></div>
             <div className="arrow"></div>

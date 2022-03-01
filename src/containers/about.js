@@ -136,7 +136,7 @@ const About = () => {
             Who I am & What I do
         </Heading>
         <Text>
-            Junior web developper belge de 27 ans.
+            Junior web developper belge de 28 ans.
             blablabla
             Passionnée de code, café, voyage, littérature et un tas d'autres petites choses.
         </Text>

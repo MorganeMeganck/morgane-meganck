@@ -2,6 +2,8 @@
 
 import React from "react";
 import styled from 'styled-components';
+import imgBottom from '../images/prout.svg';
+import imgContact from '../images/prout5.svg';
 import GithubIcon from "../components/icons/github";
 import LinkedInIcon from "../components/icons/linkedin";
 import { Link } from 'gatsby'
@@ -70,30 +72,43 @@ width: 30%;
 background-color: #333;
 `;
 // if you can read this then you're pretty
-const Bottomimgleft = styled.div`
-  width: 5rem;
-  height: 180px;
+const BottomImgLeft= styled.div`
+  background-image: url(${imgBottom});
+  width: 150px;
+  height: 200px;
   -moz-transform: scaleX(-1);
-          -o-transform: scaleX(-1);
-          -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-          filter: FlipH;
-          -ms-filter: "FlipH";
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
   position: absolute;
-  top:0;
-  left: 0;
+  left: -60px;
+  top: 0;
   background-repeat: no-repeat;
   background-position: left;
+`;
+const BottomImgRight = styled.div`
+  background-image: url(${imgBottom});
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  right: 5px;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: right;
   
 `;
-const Bottomimgright = styled.div`
-width: 5rem;
-height: 180px;
-position: absolute;
-top:0;
-right: 0.3rem;
-background-repeat: no-repeat;
-background-position: right;
+const ImageContact = styled.div`
+  background-image: url(${imgContact});
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -35px;
+  left: 47%;
+  background-repeat: no-repeat;
+  
 `;
 const List = styled.ul`
   padding: 0;
@@ -124,6 +139,7 @@ const SocialLink = styled.a`
 const Contact = () => {
   return (
     <Section id="contact" data-aos="fade-down" data-aos-duration="350" data-aos-delay="250">
+        <ImageContact></ImageContact>
         <TopBorderleft></TopBorderleft>
         <TopBorderright></TopBorderright>
         <Heading data-aos="fade-up" data-aos-duration="350" data-aos-delay="250">
@@ -150,8 +166,8 @@ const Contact = () => {
         <Text data-aos="fade-up" data-aos-duration="350" data-aos-delay="250">
             Brussels morgane.meganck@gmail.com
         </Text>
-        <Bottomimgleft  style={{ backgroundImage: "url(/img/prout.svg)" }}></Bottomimgleft>
-        <Bottomimgright style={{ backgroundImage: "url(/img/prout.svg)" }}></Bottomimgright>
+        <BottomImgLeft></BottomImgLeft>
+        <BottomImgRight></BottomImgRight>
     </Section>
   );
 };
