@@ -23,6 +23,7 @@ const Intro = styled.div`
     text-align: center;
 `;
 const Heading = styled.h1`
+padding-top: 5rem;
 font-family: 'Julius Sans One', sans-serif;
 font-size: 3.5em;
 line-height: 100px;
@@ -115,8 +116,7 @@ const Header = ({ show }) => {
               </div>
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link href="#home">About</Nav.Link>
-                  <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                  <Link to={'/about'} className="navbarLink">About</Link>
                   <Link to={'/portfolio'} className="navbarLink">Portfolio</Link>
                 </Nav>
               </Navbar.Collapse>
@@ -142,10 +142,7 @@ const Header = ({ show }) => {
             <div className="arrow"></div>
       </Link> 
       </HeaderDiv>
-      
-      
-      
-     
+
     </HeaderTag>
   );
 };

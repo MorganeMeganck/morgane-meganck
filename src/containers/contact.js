@@ -6,12 +6,12 @@ import imgBottom from '../images/prout.svg';
 import imgContact from '../images/prout5.svg';
 import GithubIcon from "../components/icons/github";
 import LinkedInIcon from "../components/icons/linkedin";
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 
-{/* <div className="section contact" id="section-contact" data-aos="fade-down"> */}
+
 const Section = styled.section`  
   position: relative;
-  width: 100%;
+  width: 900px;
   border: 2px solid #333;
   border-top: none;
   text-align: center;

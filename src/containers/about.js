@@ -8,7 +8,10 @@ import { Link } from 'gatsby'
 const { fonts, colors, flexCenter, initialAnimationDuration, delay } = Theme;
 
 {/* <div className="text aboutcontainer" id="section-contact" data-aos="fade-down"> */}
-const Section = styled.section`  
+const Section = styled.section` 
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  margin-left: 180px;
   @media screen and (max-width: 900px) {
     padding: 0 4rem;
   }

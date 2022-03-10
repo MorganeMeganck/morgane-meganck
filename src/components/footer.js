@@ -21,7 +21,6 @@ const Copyright = styled.p`
   margin: auto;
   margin-top: auto;
   margin-bottom: auto;
-  margin-top: 100px;
   padding: 0 50px;
   box-sizing: border-box;
   background: black;
