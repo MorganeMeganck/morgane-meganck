@@ -9,8 +9,7 @@ import { Link } from 'gatsby'
 {/* <div className="section contact" id="section-contact" data-aos="fade-down"> */}
 const Section = styled.section`  
   position: relative;
-  width: 900px;
-  max-width: 80%;
+  width: 100%;
   border: 2px solid #333;
   border-top: none;
   text-align: center;

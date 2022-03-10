@@ -17,12 +17,13 @@ const FooterTag = styled.footer`
 const Copyright = styled.p`
   font-size: 1.4rem;
   margin-bottom: 2rem;
+  
 `;
 
 const Footer = () => {
   return (
     <FooterTag>
-      <Copyright> 2021 &copy; Brussels, BE</Copyright>
+       <Copyright className="copy"></Copyright>
     </FooterTag>
   );
 };

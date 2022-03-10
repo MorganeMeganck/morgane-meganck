@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { Link } from 'gatsby'
 import { Navbar } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
+import PortfolioPage from '../pages/portfolio'
+import AboutPage from '../pages/about'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import Logo from "../components/logo/logo";
 import Hamburger from "../components/hamburger/hamburger";
@@ -54,6 +56,8 @@ const Text = styled.p`
     line-height: 34px;
     font-style: italic;
     letter-spacing: .09em;
+    margin: 0;
+    padding: 0;
   @media screen and (max-width: 600px) {
     font-weight: 400;
       font-size: 18px;
@@ -97,22 +101,25 @@ const Header = ({ show }) => {
   return (
     <HeaderTag show={show}>
 
-    <Navbar id="header" className="navbar">
-          <div id="header-container" className="container navbar-container">
-              <div className="navbar-header">
-                  <Navbar.Brand className="navbar-brand" href="#">
-                      <img className="logoResponsive" src="/img/logomm.png" width="50" height="50" top="2" alt=""/>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              </div>
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                  <Nav.Link href="#home">About</Nav.Link>
-                  <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
+<Navbar collapseOnSelect expand="lg" id="header" className="navbar" fixed="top" >
+          <div id="header-container" className="container navbar-container justify-content-center">
+         
+          <Navbar.Brand className="navbar-brand" href="#" >
+             <img className="logoResponsive" src="/img/logomm.png" width="50" height="50" top="2" alt=""/>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Link to={'/about'} className="navbarLink">About</Link>
+              <Link to={'/portfolio'} className="navbarLink">Portfolio</Link>
+              <Nav.Link target="_blank" href="MorganeMeganckCV.pdf" className="navbarLink">Curriculum Vitae</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+
           </div>
       </Navbar>
+   
+
       <HeaderDiv className="container">
       <ImageLeft  style={{ backgroundImage: "url(/img/prout2.svg)" }}></ImageLeft>
       <TextWrap>
@@ -121,16 +128,16 @@ const Header = ({ show }) => {
             Hello, I'm Morgane Meganck <span>from</span> Brussels
           </Heading>
           <Text>
-            Junior web developer
+            Junior UX/UI designer & Front-end developer
           </Text>
         </Intro>
       </TextWrap>
       <ImageRight  style={{ backgroundImage: "url(/img/prout2.svg)" }}></ImageRight>
-      <Link to="/more" className="arrowContainer">
+      {/* <Link to="/more" className="arrowContainer">
             <div className="arrow"></div>
             <div className="arrow"></div>
             <div className="arrow"></div>
-      </Link>
+      </Link> */}
       </HeaderDiv>
       
       

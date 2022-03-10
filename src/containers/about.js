@@ -9,7 +9,6 @@ const { fonts, colors, flexCenter, initialAnimationDuration, delay } = Theme;
 
 {/* <div className="text aboutcontainer" id="section-contact" data-aos="fade-down"> */}
 const Section = styled.section`  
-  margin-left: 180px;
   @media screen and (max-width: 900px) {
     padding: 0 4rem;
   }
@@ -41,6 +40,7 @@ const Text = styled.p`
   width: 75vw;
   font-size: 1rem;
   line-height: 3rem;
+  padding-left: 0;
   @media screen and (max-width: 600px) {
     font-size: 1.4rem;
     line-height: 1.7;
@@ -136,12 +136,26 @@ const About = () => {
             Who I am & What I do
         </Heading>
         <Text>
-            Junior web developper belge de 27 ans.
-            blablabla
-            Passionnée de code, café, voyage, littérature et un tas d'autres petites choses.
+        Junior UX/UI designer & Front-end developer belge de 27 ans. <br></br>
+
+        Passionnée de code, café, voyage, littérature et un tas d'autres petites choses. 
         </Text>
         <Timeline>
             <TimeList>
+                <TimeEvent>
+                    <TimeEventIcon></TimeEventIcon>
+                    <TimeEventCopy>
+                        <TimeEventThumbnail>Novembre 2018 - Février 2021 </TimeEventThumbnail>
+                        <TimeTitle>Kalio Tech</TimeTitle>
+                        <TimeTitles>UX/UI designer & Front-end developer</TimeTitles>
+                        <Description>
+                          <strong>Frontend</strong><br></br> HTML5, Bootstrap, CSS/SCSS, JS/jQuery, VueJS, Drupal, Wordpress
+                          <br></br><strong>UX/UI</strong><br></br> Adobe XD, Figma, Invision, Illustrator, Photoshop, Approfondissement UX
+                          <br></br><strong>Backend</strong><br></br> Laravel
+                          <br></br><strong>Divers</strong><br></br> Git, Jira, Agile, ...
+                        </Description>
+                    </TimeEventCopy>
+                </TimeEvent>
                 <TimeEvent>
                     <TimeEventIcon></TimeEventIcon>
                     <TimeEventCopy>
@@ -149,9 +163,9 @@ const About = () => {
                         <TimeTitle>Becode</TimeTitle>
                         <TimeTitles>Formation professionnelle</TimeTitles>
                         <Description>
-                            Apprentissage appronfondi sur projets réels. Sitewebs responsives avec HTML5, CSS/SCSS, Frameworks tels que Bootstrap et Materialize, JS/jQuery,...
-                            PHP et SQL
-                            Git/github, lighthouse, ... 
+                          <strong>Frontend</strong><br></br>Apprentissage appronfondi sur projets réels. Sitewebs responsives avec HTML5, CSS/SCSS, Frameworks tels que Bootstrap et Materialize, JS/jQuery, React, Wordpress...
+                          <br></br><strong>Backend</strong><br></br> Bases en PHP et SQL
+                          <br></br><strong>Divers</strong><br></br>Git/github, lighthouse, figma ...
                         </Description>
                     </TimeEventCopy>
                 </TimeEvent>
