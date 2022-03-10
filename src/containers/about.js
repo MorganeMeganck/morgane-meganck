@@ -58,14 +58,23 @@ const Timeline = styled.div`
     content: '';
     margin-left: -1px;
     position: absolute;
-    top: 0;
-    left: 2em;
+    top: -1em;
+    left: 1em;
     width: 2px;
-    height: 100%;
+    height: 110%;
     }
 `;
 const TimeList = styled.ul`
-  
+&:before {
+  background-color: ${colors.black};
+  content: '';
+  margin-left: -1px;
+  position: absolute;
+  top: 0;
+  left: 2em;
+  width: 2px;
+  height: 100%;
+  }
 `;
 const TimeEvent = styled.li`
     position: relative;
@@ -131,14 +140,15 @@ const Description = styled.p`
 
 const About = () => {
   return (
-    <Section id="about" data-aos="fade-down" data-aos-duration="350" data-aos-delay="250">
+    <Section id="about" data-aos="fade-down" data-aos-easing="linear"
+    data-aos-duration="2000">
         <Heading id="more" >
             Who I am & What I do
         </Heading>
         <Text>
-        Junior UX/UI designer & Front-end developer belge de 27 ans. <br></br>
-
-        Passionnée de code, café, voyage, littérature et un tas d'autres petites choses. 
+            Junior web developper belge de 28 ans.
+            blablabla
+            Passionnée de code, café, voyage, littérature et un tas d'autres petites choses.
         </Text>
         <Timeline>
             <TimeList>

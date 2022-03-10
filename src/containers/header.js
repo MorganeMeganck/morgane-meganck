@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import logo from '../images/logomm.png';
 import styled from 'styled-components';
+import img from '../images/prout2.svg';
 import { Link } from 'gatsby'
 import { Navbar } from 'react-bootstrap'
 import Nav from 'react-bootstrap/Nav'
@@ -65,6 +67,7 @@ const Text = styled.p`
   }
 `;
 const ImageLeft = styled.div`
+  background-image: url(${img});
   width: 150px;
   height: 150px;
   transform: rotate(-90deg);
@@ -73,6 +76,7 @@ const ImageLeft = styled.div`
   left:0;
 `;
 const ImageRight = styled.div`
+background-image: url(${img});
   width: 150px;
   height: 150px;
   transform: rotate(90deg);
@@ -101,27 +105,26 @@ const Header = ({ show }) => {
   return (
     <HeaderTag show={show}>
 
-<Navbar collapseOnSelect expand="lg" id="header" className="navbar" fixed="top" >
-          <div id="header-container" className="container navbar-container justify-content-center">
-         
-          <Navbar.Brand className="navbar-brand" href="#" >
-             <img className="logoResponsive" src="/img/logomm.png" width="50" height="50" top="2" alt=""/>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mr-auto">
-              <Link to={'/about'} className="navbarLink">About</Link>
-              <Link to={'/portfolio'} className="navbarLink">Portfolio</Link>
-              <Nav.Link target="_blank" href="MorganeMeganckCV.pdf" className="navbarLink">Curriculum Vitae</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-
+    <Navbar id="header" className="navbar">
+          <div id="header-container" className="container navbar-container">
+              <div className="navbar-header">
+                  <Navbar.Brand className="navbar-brand" href="#">
+                      <img className="logoResponsive" src={logo} width="50" height="50" top="2" alt=""/>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              </div>
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                  <Nav.Link href="#home">About</Nav.Link>
+                  <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                  <Link to={'/portfolio'} className="navbarLink">Portfolio</Link>
+                </Nav>
+              </Navbar.Collapse>
           </div>
       </Navbar>
-   
-
-      <HeaderDiv className="container">
-      <ImageLeft  style={{ backgroundImage: "url(/img/prout2.svg)" }}></ImageLeft>
+      <HeaderDiv className="container" data-aos="fade-up" data-aos-easing="linear"
+    data-aos-duration="2000">
+      <ImageLeft ></ImageLeft>
       <TextWrap>
         <Intro className="intro" >
           <Heading id="more">
@@ -132,12 +135,12 @@ const Header = ({ show }) => {
           </Text>
         </Intro>
       </TextWrap>
-      <ImageRight  style={{ backgroundImage: "url(/img/prout2.svg)" }}></ImageRight>
-      {/* <Link to="/more" className="arrowContainer">
+      <ImageRight ></ImageRight>
+      <Link to="/#more" className="arrowContainer">
             <div className="arrow"></div>
             <div className="arrow"></div>
             <div className="arrow"></div>
-      </Link> */}
+      </Link> 
       </HeaderDiv>
       
       
