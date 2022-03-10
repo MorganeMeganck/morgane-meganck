@@ -1,9 +1,10 @@
 
 import React from "react";
-import Layout from '../layout'
+import Layout from '../layout';
 import styled from 'styled-components';
-import IndexPage from '../pages/index'
-import Portfolio from '../pages/portfolio'
+import IndexPage from '../pages/index';
+import Portfolio from '../pages/portfolio';
+import img from '../images/prout.svg';
 import classNames from 'classnames';
 import ProjectCategory from "../components/projectcategory";
 
@@ -23,17 +24,11 @@ class Collection extends React.Component {
         }
     }
     componentDidMount() {
-      // this._getCategories(); // Codepen switched to HTTPS, so I have to load JSON manually instead of the json-generator
       this.setState({
-        categories: [{"thumbnail":"/img/prout.svg","link":"www.google.be","taxonomy":"category","count":6,"name":"consequat","slug":"commodo","id":"586537da62981d5fb8c21617"},{"thumbnail":"/img/prout2.svg","link":"www.google.be","taxonomy":"category","count":8,"name":"non","slug":"laborum","id":"586537da60c040bc1e3060a1"},{"thumbnail":"/img/prout.svg","link":"www.google.be","taxonomy":"category","count":3,"name":"non","slug":"commodo","id":"586537daffc67c66ec4dc356"}]
+        categories: [{"thumbnail":`"${img}"`,"link":"www.google.be","taxonomy":"category","count":1,"name":"Fun translation API","slug":"fun","id":"586537da62981d5fb8c21617","cat":"1"},{"thumbnail":`"${img}"`,"link":"www.google.be","taxonomy":"category","count":2,"name":"non","slug":"test","id":"586537da60c040bc1e3060a1","cat":"2"},{"thumbnail":`"${img}"`,"link":"www.google.be","taxonomy":"category","count":3,"name":"non","slug":"commodo","id":"586537daffc67c66ec4dc356","cat":"3"}]
       })
     }
-    _getCategories() {
-      let _this = this
-      let url = 'http://beta.json-generator.com/api/json/get/E1NpHQAEf';
-      fetch(url).then( response => response.json() )
-      .then( json => { _this.setState({ categories: json }) })
-    }
+   
     _handleClick(i){
       this.setState({
         activeIndex: i,
@@ -73,7 +68,7 @@ class Collection extends React.Component {
         focused: this.state.open
       })
       return (
-        <div className={'categories--menu-container ' + classes} onClick={this._focusOff} style={{height: window.innerHeight}}>
+        <div className={'categories--menu-container p-5 ' + classes} onClick={this._focusOff} >
           <ul className="categories menu portfolio">
             {catNodes}
           </ul>

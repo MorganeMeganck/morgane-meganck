@@ -38,13 +38,12 @@ const Layout = ({ children }) => {
   });
 
   return (
-    <React.Fragment>
+    <>
       <Head />
       <Header show={show} />
       <Main>{children}</Main>
       <Footer />
-      
-    </React.Fragment>
+    </>
   );
 };
 

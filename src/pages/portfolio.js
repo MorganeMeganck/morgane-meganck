@@ -1,18 +1,22 @@
 
 
 import React from "react";
-import Layout from '../layout'
-import IndexPage from '../pages/index'
+import IndexPage from '../pages/index';
+import Head from "../components/head";
+import Footer from "../components/footer";
 import Collection from "../components/collection";
-import Contact from "../containers/contact";
+import NavbarComp from "../components/navbarcomp";
 
 const PortfolioPage = () => {
   return (
+  
     <>
-      <IndexPage>
-        <Collection />
-      </IndexPage>
+      <Head />
+      <NavbarComp/>
+      <Collection />
+      <Footer />
     </>
+
   );
 };
 

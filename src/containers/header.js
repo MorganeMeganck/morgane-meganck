@@ -3,13 +3,7 @@ import logo from '../images/logomm.png';
 import styled from 'styled-components';
 import img from '../images/prout2.svg';
 import { Link } from 'gatsby'
-import { Navbar } from 'react-bootstrap'
-import Nav from 'react-bootstrap/Nav'
-import PortfolioPage from '../pages/portfolio'
-import AboutPage from '../pages/about'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import Logo from "../components/logo/logo";
-import Hamburger from "../components/hamburger/hamburger";
+import NavbarComp from "../components/navbarcomp";
 
 const HeaderTag = styled.header`
  
@@ -105,23 +99,7 @@ const Header = ({ show }) => {
 
   return (
     <HeaderTag show={show}>
-
-    <Navbar id="header" className="navbar">
-          <div id="header-container" className="container navbar-container">
-              <div className="navbar-header">
-                  <Navbar.Brand className="navbar-brand" href="#">
-                      <img className="logoResponsive" src={logo} width="50" height="50" top="2" alt=""/>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              </div>
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                  <Link to={'/about'} className="navbarLink">About</Link>
-                  <Link to={'/portfolio'} className="navbarLink">Portfolio</Link>
-                </Nav>
-              </Navbar.Collapse>
-          </div>
-      </Navbar>
+      <NavbarComp/>
       <HeaderDiv className="container" data-aos="fade-up" data-aos-easing="linear"
     data-aos-duration="2000">
       <ImageLeft ></ImageLeft>
