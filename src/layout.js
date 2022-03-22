@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import ReactDOM from "react-dom";
 import "aos/dist/aos.css";
 import PropTypes from "prop-types";
@@ -7,7 +7,6 @@ import Head from "./components/head";
 import Footer from "./components/footer";
 import Header from "./containers/header";
 import useScrollDirection from "./hooks/useScrollDirection";
-
 
 const Main = styled.main`
   margin: 0 auto;
@@ -52,5 +51,3 @@ Layout.propTypes = {
 };
 
 export default Layout;
-
-

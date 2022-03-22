@@ -1,8 +1,6 @@
-
-
 import React from "react";
-import Layout from '../layout'
-import IndexPage from '../pages/index'
+import Layout from "../layout";
+import IndexPage from "../pages/index";
 import About from "../containers/about";
 import Head from "../components/head";
 import Footer from "../components/footer";
@@ -11,10 +9,10 @@ import NavbarComp from "../components/navbarcomp";
 
 const AboutPage = () => {
   return (
-      <IndexPage>
-        <Head />
-        <About />
-      </IndexPage>
+    <IndexPage>
+      <Head />
+      <About />
+    </IndexPage>
   );
 };
 
