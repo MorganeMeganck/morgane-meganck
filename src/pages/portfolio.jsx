@@ -1,5 +1,5 @@
 import React from "react";
-import IndexPage from "../pages/index";
+import IndexPage from "./index";
 import Head from "../components/head";
 import Footer from "../components/footer";
 import Collection from "../components/collection";
