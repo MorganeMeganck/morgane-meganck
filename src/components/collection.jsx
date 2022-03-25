@@ -43,7 +43,7 @@ const Wrap = styled.div`
 const Collection = (props) => {
   return (
     <Section
-      className="container mt-0"
+      className="container"
       id="projects"
       data-aos="fade-down"
       data-aos-easing="linear"

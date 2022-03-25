@@ -5,7 +5,7 @@
       "url": "https://www.google.com/",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et lobortis leo. Quisque interdum turpis quis justo fermentum suscipit. Fusce ipsum nibh, ultrices a gravida facilisis, congue ac mi. Aenean semper lacus vitae accumsan consequat. Curabitur ullamcorper odio libero, ut consequat tellus ultrices sed. Aliquam aliquam eleifend lectus, a dapibus arcu. Praesent vel vehicula velit. Pellentesque venenatis dolor tincidunt felis posuere porta sit amet eget metus. Ut in pulvinar ante, et tincidunt massa. ",
       "technos": ["Laravel", "React"],
-      "cover_image": "/img/...png",
+      "cover_image": "images/funapi.png",
       "created_at": 1648764000000
     },
     {
@@ -13,7 +13,7 @@
       "url": "https://www.google.com/",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et lobortis leo. Quisque interdum turpis quis justo fermentum suscipit. Fusce ipsum nibh, ultrices a gravida facilisis, congue ac mi. Aenean semper lacus vitae accumsan consequat. Curabitur ullamcorper odio libero, ut consequat tellus ultrices sed. Aliquam aliquam eleifend lectus, a dapibus arcu. Praesent vel vehicula velit. Pellentesque venenatis dolor tincidunt felis posuere porta sit amet eget metus. Ut in pulvinar ante, et tincidunt massa. ",
       "technos": ["Laravel", "React"],
-      "cover_image": "/img/...png",
+      "cover_image": "images/prout.svg",
       "created_at": 1646089200000
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://www.google.com/",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et lobortis leo. Quisque interdum turpis quis justo fermentum suscipit. Fusce ipsum nibh, ultrices a gravida facilisis, congue ac mi. Aenean semper lacus vitae accumsan consequat. Curabitur ullamcorper odio libero, ut consequat tellus ultrices sed. Aliquam aliquam eleifend lectus, a dapibus arcu. Praesent vel vehicula velit. Pellentesque venenatis dolor tincidunt felis posuere porta sit amet eget metus. Ut in pulvinar ante, et tincidunt massa. ",
       "technos": ["Laravel", "React"],
-      "cover_image": "/img/...png",
+      "cover_image": "images/prout.svg",
       "created_at": 1638313200000
     },
     {
@@ -29,7 +29,7 @@
       "url": "https://www.google.com/",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et lobortis leo. Quisque interdum turpis quis justo fermentum suscipit. Fusce ipsum nibh, ultrices a gravida facilisis, congue ac mi. Aenean semper lacus vitae accumsan consequat. Curabitur ullamcorper odio libero, ut consequat tellus ultrices sed. Aliquam aliquam eleifend lectus, a dapibus arcu. Praesent vel vehicula velit. Pellentesque venenatis dolor tincidunt felis posuere porta sit amet eget metus. Ut in pulvinar ante, et tincidunt massa. ",
       "technos": ["Laravel", "React"],
-      "cover_image": "/img/...png",
+      "cover_image": "images/prout.svg",
       "created_at": 1640991600000
     }
   ]
